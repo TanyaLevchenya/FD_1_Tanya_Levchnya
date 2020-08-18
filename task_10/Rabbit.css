@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+}
+@font-face{
+    font-family: BebasNeueRegular;
+    src: url(./font/BebasNeueRegular.ttf);
+}
+@font-face{
+    font-family: StMarie;
+    src: url(./font/StMarie-Thin.otf);
+}
+header{
+    background-image: url(./image/rabbit-mouth.png);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+}
+.orange_rabbit{
+    margin: 20px 120px 20px;
+}
+.orange{
+    color: #f3bc06;
+    font-size: 27px;
+}
+.rabbit{
+    color: #525050d8;
+    font-family: BebasNeueRegular;
+    font-size: 35px;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 100px;
+    text-align: center;
+    color: #363534e7;
+}
+.menu1{
+     background-image: url(./image/sprite.png);
+     background-position: 0px 94px;
+     height: 48px;
+     width: 50px;
+     margin: 30px 30px 5px;
+     font-family: StMarie;
+}
+.menu2{
+     background-image: url(./image/sprite.png);
+     background-position: 215px 94px;
+     height: 47px;
+     width: 29px;
+     margin: 30px 30px 5px;
+     font-family: StMarie;
+}
+.menu3{
+    background-image: url(./image/sprite.png);
+    background-position: 730px 94px;
+    height: 47px;
+    width: 54px;
+    margin: 30px 30px 5px;
+    font-family: StMarie;
+}
+.menu4{
+    background-image: url(./image/sprite.png);
+    background-position: 410px 94px;
+    height: 47px;
+    width: 53px;
+    margin: 30px 30px 5px;
+    font-family: StMarie; 
+}
+.menu5{
+    background-image: url(./image/sprite.png);
+    background-position: 620px 94px;
+    height: 47px;
+    width: 75px;
+    margin: 30px 30px 5px;
+    font-family: StMarie; 
+}      
+section{
+    height: 250px;
+    background-image: url(./image/big-orange-bg.png);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    border-top: 3px solid #ecaf05e8;
+    border-bottom: 3px solid #fda605e8;
+    font-family: BebasNeueRegular;
+}
+.rabbits{
+    background-color: #383535ce;
+    color: #ffbf10f5;
+    font-size: 35px;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px 10px;
+    margin-left: 100px;
+    text-align: center;  
+}
+.oranges{
+    background-color: #fcb317c9;
+    color: #524f4fe8;
+    font-size: 35px;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px 10px;
+    margin-left: 100px;
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+.block{
+    width: 220px;
+    margin: 20px auto;
+}
+.ellipsis{
+    color: orange;
+    text-align: right;
+}
+h2{
+    color: #ffbd55;
+    text-decoration: underline #ffbd55;
+    text-align: center;
+    font-family: StMarie; 
+}
+.case{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
+.image{
+    height: 260px;
+    width: 260px;
+    border-radius: 130px;
+    border: 6px solid #f79604fa;
+    margin: 20px auto;
+}
+.section{
+    width: 260px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+span{
+    color: orange;
+}
+.information{
+    padding: 0 100px;
+    color: #fcb544 
+}
+.name{
+    margin: 10px;
+    border: inset;
+    width: 90%;
+    vertical-align: middle;
+    padding-left: 18px; 
+}
+button{
+    background-color: #fb9c06;
+    color: white;
+    width: 120px;
+    font-size: 20px;
+    height: 35px;
+    border: outset;
+    font-family:  StMarie;
+}
+.button{  display: flex;
+          justify-content: flex-end;
+          margin-right: 150px;
+}
+footer{
+    background-color: #fb9c06;
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family:  StMarie;
+    text-align: center;
+    margin: 30px 0 0;
+    height: 40px;
+    line-height: 40px;
+}
