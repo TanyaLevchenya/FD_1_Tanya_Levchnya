@@ -1,6 +1,6 @@
-.body{ margin: 0; 
-       background-color: #f0f2f3; 
-       font-family: Roboto, serif;
+body{ margin: 0; 
+      background-color: #f0f2f3; 
+      font-family: Roboto, serif;
 }
 header{ background-color: black; 
         color: white; 
@@ -9,7 +9,7 @@ header{ background-color: black;
         font-size: 20px;
         padding-left: 20px;
 }
-.link{ padding-left: 35px;
+span{ padding-left: 35px;
 }
 a{ text-decoration: none;
    font-size: 15px;
@@ -29,24 +29,33 @@ h3{ color: white;
     font-size: 55px;
     padding-left: 150px;
 }
-@media (max-width: 600px){
+@media (max-width: 800px){
        section{ 
          align-items: flex-start;
          justify-content: flex-start;
          display: flex;
          justify-content: center;}
-        h3{
-          padding-left: 0; 
-          text-align: center;}
+       h3{
+         padding-left: 0; 
+         text-align: center;}
+}
+@media (max-width: 1700px){
+       section{ 
+         align-items: flex-start;
+         justify-content: flex-start;
+         display: flex;
+         justify-content: center;}
+       h3{
+         padding-left: 0; 
+         text-align: center;}
 }
 @media (max-width: 320px){
        section{ 
          justify-content: flex-start;
          display: flex;
          justify-content: center;
-         background-image: url(./pexels-photo-583846.jpg);
-         width: 320px;}
-        h3{
+         background-image: url(./pexels-photo-583846.jpg);}
+       h3{
          text-align: center;}
 }
 main{ padding: 0 20px 20px;
@@ -58,23 +67,24 @@ h2{ text-transform: uppercase;
     text-align: center;
     color: #252525;
 }
-.from{ padding-bottom: 25px;
+.menu{ padding-bottom: 25px;
 }
 .clear{ clear: both;
 }
-.button-menu{ background-color: white; 
-              color: #8abbe6;
-              height: 40px;
-              line-height: 40px;
-              width: 21%;
-              float: left;
-              padding-left: 20px;
-              margin: 5px;
-              min-width: 255px;
+div > div{ background-color: white; 
+           color: #8abbe6;
+           height: 40px;
+           line-height: 40px;
+           width: 21%;
+           float: left;
+           padding-left: 20px;
+           margin: 5px;
+           min-width: 255px;
 }
-.button-menu:hover{ box-shadow: -1px 6px 16px 1px rgba(5, 5, 5, 0.925);
-                    transition: all 1s;
-                    text-decoration: underline;
+div > div:hover{ 
+       box-shadow: -1px 6px 16px 1px rgba(5, 5, 5, 0.925);
+       transition: all 1s;
+       text-decoration: underline;
 }
 table{ border-collapse: collapse;
        border-radius: 5px;
@@ -83,19 +93,37 @@ table{ border-collapse: collapse;
        table-layout: fixed;
        min-width: 800px;
 }
-.scroll{ overflow: scroll;
+.table_scroll{ 
+       overflow: scroll;
 }
-.bottom{ border-bottom: solid #868b85 1px;
+.bottom_line{ 
+       border-bottom: solid #868b85 1px;
 }
-div span{ font-weight: bold;
+.left_cell{
+       padding-left: 15px;
 }
-.text-button{ color: #4c96d8; 
-              padding: 4px; 
-              cursor: pointer;
+.left_cell  div:nth-child(-n+3){
+       padding: 5px;
+} 
+.left_cell div:first-child{ 
+       color: #4c96d8; 
+       cursor: pointer;
+}     
+.left_cell div:first-child:hover{ 
+       color: #151d3d;
 }
-.text-button:hover{ color: #151d3d;
+.left_cell div:last-child{
+       font-size: 15px;
 }
-.button{ background-color: #a3c644;
+.middle_cell div:nth-child(-n+3){
+       padding: 5px;
+}
+.button{
+       width: 190px;
+       padding-right: 15px;
+}
+.button div:first-child{ 
+         background-color: #a3c644;
          color: white; 
          border-radius: 4px;
          text-align: center;
@@ -103,39 +131,27 @@ div span{ font-weight: bold;
          padding: 7px;
          margin-top: 15px;
          margin-bottom: 8px;
-         cursor: pointer;
+         cursor: pointer; 
 }
-.button:hover{ background-color: #43ca0d;
+.button div:first-child:hover{ background-color: #43ca0d;
 }
-.button:active{ background-color: #32970a;
+.button div:first-child:active{ background-color: #32970a;
 }
-.cell{ width: 180px; 
-       padding-right: 15px;
+.button div:last-child{ 
+       border-style: solid;
+       border-width: 1px; 
+       margin-bottom: 15px; 
+       color: #5098d8; 
+       border-radius: 4px; 
+       font-size: 17px; 
+       text-align: center;
+       cursor: pointer;
+       padding: 7px;
 }
-.left{ padding-left: 15px;
+.button div:last-child:hover{ background-color: #cbcec9; 
 }
-.right{ padding-right: 15px;
+.button div:last-child:active{ background-color: #70746f;
+}  
+div span{ font-weight: bold;
+          padding-left: 0;
 }
-.padding{ padding: 4px;
-}
-.time{ font-size: 12px; 
-       padding: 4px;
-}
-.clock{ font-size: 15px; 
-        padding: 4px;
-}
-.key{ border-style: solid;
-      border-width: 1px; 
-      margin-bottom: 15px; 
-      color: #5098d8; 
-      border-radius: 4px; 
-      font-size: 17px; 
-      text-align: center;
-      cursor: pointer;
-      padding: 7px;
-}
-.key:hover{ background-color: #cbcec9; 
-}
-.key:active{ background-color: #70746f;
-}
-
