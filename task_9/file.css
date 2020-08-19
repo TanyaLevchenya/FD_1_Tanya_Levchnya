@@ -39,16 +39,6 @@ h3{ color: white;
          padding-left: 0; 
          text-align: center;}
 }
-@media (max-width: 1700px){
-       section{ 
-         align-items: flex-start;
-         justify-content: flex-start;
-         display: flex;
-         justify-content: center;}
-       h3{
-         padding-left: 0; 
-         text-align: center;}
-}
 @media (max-width: 320px){
        section{ 
          justify-content: flex-start;
@@ -99,11 +89,8 @@ table{ border-collapse: collapse;
 .bottom_line{ 
        border-bottom: solid #868b85 1px;
 }
-.left_cell{
-       padding-left: 15px;
-}
 .left_cell  div:nth-child(-n+3){
-       padding: 5px;
+       padding: 5px 5px 5px 15px;
 } 
 .left_cell div:first-child{ 
        color: #4c96d8; 
