@@ -7,12 +7,14 @@
     <link rel="stylesheet" type="text/css" href="./Rabbit.css">
 </head>
 <body>
-    <div class="burger-menu">
-        <input type="menu_switch" type="checkbox"/>
-        <label class="menu" for="menu_switch">
-        <span >&#8801;</span>
-        </label>
-    <ul class="menu_box">
+<div class="burger-menu">
+        <a href="#burger" class="menu">
+            <span class="jump">&#8801;</span>
+        </a>
+    <div class="menu_box" id="burger">
+            <a href="#">close</a>
+
+    <ul>
         <li>
            <a class="burger_menu_item" href="#">home</a>
         </li>
@@ -30,8 +32,10 @@
         </li>
     </ul>
     </div>
+</div>
 <!-- Header -->
 <header>
+<div class="header">
     <div>
         <img src="./image/rabbit-mouth.png">
     </div>
@@ -40,7 +44,7 @@
         <div>orange</div>
         <div>rabbit</div>
     </div> 
-
+</div>
 <div class="menu">
     <div> 
         <div class="menu-item home"></div>

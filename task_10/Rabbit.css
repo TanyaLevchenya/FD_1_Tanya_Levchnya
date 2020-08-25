@@ -9,20 +9,6 @@ body{
     font-family: StMarie;
     src: url(./font/StMarie-Thin.otf);
 }
-@media(max-width: 600px){
-    .conteiner{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;}
-    .conteiner-image{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-}
-@media(max-width: 700px){
-}
-
 /* Header */
 header{
     display: flex;
@@ -33,6 +19,10 @@ header{
     position: fixed;
     top: 0;
 }
+.header{
+    display: flex;
+
+}
 div img{
     margin-left: 100px;
 }
@@ -40,7 +30,6 @@ div img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 200px;
 }
 .logo div:first-child{
     color: #fb9c06;
@@ -53,7 +42,6 @@ div img{
 }
 .menu{
     display: flex;
-    margin-right: 100px;
     align-items: center;
     text-align: center;
     color: #9f9c9c;
@@ -219,3 +207,32 @@ footer{
     font-family: StMarie;
     text-transform: uppercase;
 }
+@media(max-width: 600px){
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;}
+    .conteiner-image{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+.burger-menu{
+        font-size: 50px;
+    }
+    .jump{
+        color: #ff9c00;
+    }
+    .menu_box{
+        display: none;
+    }
+    .menu_box:target{
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fcc759;
+    }
