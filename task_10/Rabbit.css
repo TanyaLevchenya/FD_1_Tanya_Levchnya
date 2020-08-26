@@ -21,15 +21,19 @@ header{
 }
 .header{
     display: flex;
-
+    margin: 0 100px;
 }
-div img{
-    margin-left: 100px;
+.menu{
+    margin: 0 100px;
+}
+.header div{
+   margin-top: 10px;
+   margin-right: 40px;
 }
 .logo{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .logo div:first-child{
     color: #fb9c06;
@@ -196,6 +200,7 @@ button{
           margin-right: 30px;
 }
 /* Third conteiner-information */
+
 footer{
     background-color: #fb9c06;
     color: white;
@@ -207,32 +212,79 @@ footer{
     font-family: StMarie;
     text-transform: uppercase;
 }
+
 @media(max-width: 600px){
-    .conteiner{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;}
-    .conteiner-image{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
+.conteiner{
+    display: flex;
+    justify-content: center;
 }
+.conteiner-image{
+    display: flex;
+    justify-content: center;
+}
+.block-image{
+    margin: 10px 0;
+}
+.block{
+    margin: 10px 10px;
+}
+footer{
+    font-size: 15px;
+}
+}
+@media(max-width: 9000px){
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+.conteiner-image{
+    display: flex;
+    justify-content: center;
+}
+.block-image{
+    margin: 10px 0;
+}
+.block{
+    margin: 10px 10px;
+}
+footer{
+    font-size: 15px;
+}
+}
+@media(max-width: 1115px){
 .burger-menu{
         font-size: 50px;
-    }
-    .jump{
-        color: #ff9c00;
-    }
-    .menu_box{
+        display: flex;
+        justify-content: flex-end;
+}
+.menu_box{
         display: none;
-    }
-    .menu_box:target{
+}
+header{
+        display: none;
+}
+.menu_box:target{
         display: block;
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #fcc759;
-    }
+        background-color: #f8e2b3;
+}
+.burger_menu_item{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #fb9c06;
+}
+.jump{
+    color: #f88a0b;
+}
+.close{
+    text-decoration: none;
+    color: #ffc014;
+    background-color: #e75541;
+    padding: 10px;
+}
+}
