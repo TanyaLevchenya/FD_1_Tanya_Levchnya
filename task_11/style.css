@@ -3,13 +3,14 @@ body{
 }
 .header{
     border-top: 2px solid #c6c6c6;
-    width: 100%;
-    position: fixed;
+    left: 0;
+    right: 0;
     top: 0;
+    position: fixed;
 }
 .header div:last-child{
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 main{
     margin-top: 52px;
@@ -29,10 +30,7 @@ main{
 .cell{
     display: flex;
     flex-grow: 1;
-    width: 30%;
-}
-.line:first-child{
-    background-color: white;
+    flex-basis: 0;
 }
 .line:nth-child(odd):not(.header){
     background-color: #f5f5f5;
@@ -41,15 +39,15 @@ main{
     background-color: #ffffff;
 }
 .button{
-    display: flex;
     color: white;
-    height: 40px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 35px;
+    justify-content: flex-end;
 }
 .button div{
-     border-radius: 4px;
-     padding:0 20px;
-     margin: 0 0 0 10px;
+    border-radius: 4px;
+    padding:0 20px;
+    margin: 0 0 0 10px;
 }
 .button div:first-child{
     background-color: #2f3c9b;
@@ -63,16 +61,17 @@ footer{
     height: 50px;
     line-height: 50px;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     position: fixed;
     color: #686868;
-    background-color: white;
+    padding: 0 20px;
+}
+span{
+    white-space: pre;
 }
 .pagination{
     display: flex;
-}
-footer > div{
-   padding: 0 20px;
 }
 .pagination div{
     margin:0 10px;
