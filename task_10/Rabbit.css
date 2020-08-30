@@ -14,16 +14,14 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     background-color: white;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
 }
 .header{
     display: flex;
-    margin: 0 100px;
-}
-.menu{
     margin: 0 100px;
 }
 .header div{
@@ -49,6 +47,7 @@ header{
     align-items: center;
     text-align: center;
     color: #9f9c9c;
+    margin: 0 100px;
 }
 .menu-item {
     height: 48px;
@@ -58,12 +57,12 @@ header{
     background-image: url(./image/sprite.png);
 }
 .home{
-     background-position: 0px 94px;
+    background-position: 0px 94px;
 }
 .about{
-     background-position: 218px 94px;
-     height: 48px;
-     width: 30px;
+    background-position: 218px 94px;
+    height: 48px;
+    width: 30px;
 }
 .work{
     background-position: 730px 94px;
@@ -195,9 +194,10 @@ button{
     border: outset;
     font-family:  StMarie;
 }
-.button{  display: flex;
-          justify-content: flex-end;
-          margin-right: 30px;
+.button{  
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
 }
 /* Third conteiner-information */
 
@@ -212,8 +212,7 @@ footer{
     font-family: StMarie;
     text-transform: uppercase;
 }
-
-@media(max-width: 600px){
+@media(min-width: 1900px){
 .conteiner{
     display: flex;
     justify-content: center;
@@ -222,24 +221,12 @@ footer{
     display: flex;
     justify-content: center;
 }
-.block-image{
-    margin: 10px 0;
-}
-.block{
-    margin: 10px 10px;
-}
-footer{
-    font-size: 15px;
-}
-}
-@media(max-width: 9000px){
-.conteiner{
+header{
     display: flex;
     justify-content: center;
 }
-.conteiner-image{
-    display: flex;
-    justify-content: center;
+.header, .menu{
+    margin: 0;
 }
 .block-image{
     margin: 10px 0;
@@ -248,43 +235,117 @@ footer{
     margin: 10px 10px;
 }
 footer{
-    font-size: 15px;
+    font-size: 25px;
 }
 }
 @media(max-width: 1115px){
+.menu{
+    text-decoration: none;
+}
 .burger-menu{
-        font-size: 50px;
-        display: flex;
-        justify-content: flex-end;
+    font-size: 60px;
+    display: flex;
+    justify-content: flex-end;
 }
 .menu_box{
-        display: none;
+    display: none;
 }
 header{
-        display: none;
+    display: none;
 }
 .menu_box:target{
-        display: block;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #f8e2b3;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f1e3;
 }
 .burger_menu_item{
     text-decoration: none;
     display: flex;
     justify-content: center;
     color: #fb9c06;
+    cursor: wait;
+}
+.burger_menu_item:hover{
+    color: #fcc759;
 }
 .jump{
     color: #f88a0b;
 }
+.jump:hover{
+    color: #f52a07;
+}
 .close{
     text-decoration: none;
-    color: #ffc014;
-    background-color: #e75541;
+    color: #fb9c06;
     padding: 10px;
+}
+.close:hover{
+    color: #f52a07;
+}
+.conteiner{
+    justify-content: center;
+}
+.block{
+    margin: 20px;
+}
+}
+@media(max-width: 600px){
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;}
+.name-section{
+    margin-left: 0;
+}
+.conteiner-image{
+    display: flex;
+    justify-content: center;
+}
+.block-image{
+    margin: 10px 0;
+}
+.block{
+    margin: 10px 10px;
+    }
+footer{
+    font-size: 20px;
+}
+}
+@media(max-width: 420px){
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;}
+.name-section{
+    margin-left: 0;
+}
+.conteiner-image{
+    display: flex;
+    justify-content: center;
+}
+.block-image{
+    margin: 10px 0;
+}
+.block{
+    margin: 10px 10px;
+}
+.button{
+    margin-right: 15px;
+}
+button{
+    font-size: 15px;
+}
+footer{
+    font-size: 13px;
 }
 }
