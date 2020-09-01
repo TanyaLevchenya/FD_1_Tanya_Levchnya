@@ -29,25 +29,6 @@ h3{ color: white;
     font-size: 55px;
     padding-left: 150px;
 }
-@media (max-width: 800px){
-    section{ 
-      align-items: flex-start;
-      justify-content: flex-start;
-      display: flex;
-      justify-content: center;}
-    h3{
-       padding-left: 0; 
-       text-align: center;}
-}
-@media (max-width: 320px){
-    section{ 
-      justify-content: flex-start;
-      display: flex;
-      justify-content: center;
-      background-image: url(./pexels-photo-583846.jpg);}
-    h3{
-      text-align: center;}
-}
 main{ padding: 0 20px 20px;
 }
 p{ text-align: justify;
@@ -61,7 +42,7 @@ h2{ text-transform: uppercase;
 }
 .clear{ clear: both;
 }
-div > div{ background-color: white; 
+.menu > div{ background-color: white; 
            color: #8abbe6;
            height: 40px;
            line-height: 40px;
@@ -71,7 +52,7 @@ div > div{ background-color: white;
            margin: 5px;
            min-width: 255px;
 }
-div > div:hover{ box-shadow: -1px 6px 16px 1px rgba(5, 5, 5, 0.925);
+.menu > div:hover{ box-shadow: -1px 6px 16px 1px rgba(5, 5, 5, 0.925);
                  transition: all 1s;
                  text-decoration: underline;
 }
@@ -99,43 +80,59 @@ table{ border-collapse: collapse;
 .left_cell div:last-child{
     font-size: 15px;
 }
-.middle_cell div:nth-child(-n+3){
+.middle_cell div{
     padding: 5px;
 }
-.button{
+.right_cell{
     width: 190px;
     padding-right: 15px;
 }
-.button div:first-child{ 
+.button{
+    border-radius: 4px;
+    font-size: 17px;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+}
+.right_cell div:first-child{ 
       background-color: #a3c644;
       color: white; 
-      border-radius: 4px;
-      text-align: center;
-      font-size: 17px; 
-      padding: 7px;
       margin-top: 15px;
       margin-bottom: 8px;
-      cursor: pointer; 
 }
-.button div:first-child:hover{ background-color: #43ca0d;
+.right_cell div:first-child:hover{ background-color: #43ca0d;
 }
-.button div:first-child:active{ background-color: #32970a;
+.right_cell div:first-child:active{ background-color: #32970a;
 }
-.button div:last-child{ 
+.right_cell div:last-child{ 
     border-style: solid;
     border-width: 1px; 
     margin-bottom: 15px; 
     color: #5098d8; 
-    border-radius: 4px; 
-    font-size: 17px; 
-    text-align: center;
-    cursor: pointer;
-    padding: 7px;
 }
-.button div:last-child:hover{ background-color: #cbcec9; 
+.right_cell div:last-child:hover{ background-color: #cbcec9; 
 }
-.button div:last-child:active{ background-color: #70746f;
+.right_cell div:last-child:active{ background-color: #70746f;
 }  
 div span{ font-weight: bold;
           padding-left: 0;
+}
+@media (max-width: 800px){
+    section{ 
+      align-items: flex-start;
+      justify-content: flex-start;
+      display: flex;
+      justify-content: center;}
+    h3{
+       padding-left: 0; 
+       text-align: center;}
+}
+@media (max-width: 320px){
+    section{ 
+      justify-content: flex-start;
+      display: flex;
+      justify-content: center;
+      background-image: url(./pexels-photo-583846.jpg);}
+    h3{
+      text-align: center;}
 }
