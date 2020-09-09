@@ -176,7 +176,7 @@ span{
     display: flex;
     align-items: center;
 }
-.information-input > div:first-child{
+.information-input > span:first-child{
     width: 100px;
 }
 .name{
