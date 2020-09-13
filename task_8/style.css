@@ -1,0 +1,44 @@
+body{
+    background: #e4dddd;
+    justify-content: center; 
+}
+.cross-zero{
+    width: 400px;
+    margin: 0 auto;
+}
+.cell{
+    border: 1px solid #2c2525;
+    width: 100px;
+    height: 100px;
+    float: left;
+    font-size: 40px;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+#cell1_X:checked + #cell1_0:not(:checked) + div > [for="cell1_0"]{
+    display: none;
+}
+#cell1_0:checked ~ div [for="cell1_0"]{
+    color: #e40b0b;
+    background-color: #47ecf8;
+    border-radius: 50%;
+    padding: 20px;
+    
+}
+#cell1_X:not(:checked) + #cell1_0:checked + div > [for="cell1_X"]{
+    display: none;
+}
+#cell1_X:checked ~ div [for="cell1_X"]{
+    color: #47ecf8;
+    background-color: #e40b0b;
+    border-radius: 30px;
+    padding: 20px;
+}
+[type="checkbox"]{
+    display: none;
+}
+.x_win{
+    display: none;
+}
