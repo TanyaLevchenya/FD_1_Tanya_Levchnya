@@ -1,27 +1,23 @@
 'use strict'
 
-// let firstNum = prompt ();
-// let secondOperations = prompt();
-// let thirdNum = prompt();
+let firstNum = +prompt();
+let secondOperations = prompt();
+let thirdNum = +prompt();
 
-// let subtraction = firstNum - thirdNum;
-//     if (secondOperations == '-'){
-//         alert (subtraction);
-//     }
+if (secondOperations == '-'){
+        alert (firstNum - thirdNum);
+}
 
-// let addition = +firstNum + +thirdNum;
-//     if (secondOperations == '+'){
-//         alert (addition);
-//     }
+if (secondOperations == '+'){
+        alert (firstNum + thirdNum);
+}
 
-// let division = firstNum / thirdNum;
-//     if (secondOperations == '/'){
-//         alert (division);
-//     }
+if (secondOperations == '/'){
+        alert (firstNum / thirdNum);
+}
 
-// let multiplication = firstNum * thirdNum;
-//     if (secondOperations == '*'){
-//         alert (multiplication);
-//     }
+if (secondOperations == '*'){
+        alert (firstNum * thirdNum);
+}
 
 

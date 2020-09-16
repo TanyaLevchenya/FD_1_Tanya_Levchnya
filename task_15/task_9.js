@@ -1,9 +1,9 @@
-// 'use strict'
+'use strict'
 
-// let num = 10;
+let num = 10;
 
-// num++;
-// num++;
-// num--;
+num++;
+num++;
+num--;
 
-// alert(num);
+alert(num);
