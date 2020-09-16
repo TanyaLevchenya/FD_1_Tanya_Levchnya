@@ -1,6 +1,6 @@
 'use strict'
 
-let result = document.getElementsByClassName('result');
+document.getElementsByClassName('result')[0].innerHTML = result;
 
 let numbers = prompt();
 let sum = 0;
