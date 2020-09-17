@@ -31,23 +31,44 @@
     animation-delay: 0.6s;
 }
 .calendar{
+    position: relative;
+}
+.calendar_img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 250px;
     width: 250px;
     animation-name: calendar;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.calendar_img_wrap {
+    position: absolute;
+}
+.calendar_img .calendar_img_wrap{
+    animation: none;
+}
+.calendar_img::before {
+    content: "";
+     position: absolute;
+     top: -10;
+     left: 60px;
+     z-index: -1;
+}
+.calendar_img::after{
+    content: "";
+    position: absolute;
+    top: -10;
+    left: 60px;
+    z-index: -1;
 }
 @keyframes calendar{
     from{
-       transform: translate3d(50px, 40px, 0px);
-       animation-timing-function: ease-in;
     }
-    50%{
-        transform: translate3d(50px, 50px, 0px);
-        animation-timing-function: ease-out;
-    }
-    to{
-        transform: translate(50px, 40px, 0px);
+    to {
+        transform: rotateX(150deg);
+        visibility: hidden;
     }
 }
 
