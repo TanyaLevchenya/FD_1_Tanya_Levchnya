@@ -1,5 +1,5 @@
 'use strict'
-
+let result;
 document.getElementsByClassName('result')[0].innerHTML = result;
 
 let numbers = prompt();
