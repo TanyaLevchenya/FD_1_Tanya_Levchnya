@@ -1,10 +1,12 @@
 'use strict'
 
-let name = prompt('Your name?');
-    if (name == 'Tanya'){
-        alert('Hello' + name);
+let query = prompt('Your name?');
+let name = 'Hello ';
+
+if (query.trim() == '') {
+    alert('Invalid Name');
 }
 else {
-    alert('Invalid name')
+    alert(name + query);
 }
 

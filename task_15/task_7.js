@@ -1,6 +1,5 @@
 'use strict'
 let result;
-document.getElementsByClassName('result')[0].innerHTML = result;
 
 let numbers = prompt();
 let sum = 0;
@@ -16,3 +15,5 @@ while (i < numbers.length) {
     }
     i++;
 }
+
+document.getElementsByClassName('result')[0].innerHTML = sum;
