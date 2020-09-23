@@ -27,7 +27,7 @@
     padding: 10px;
     text-align: left;
 }
-.menu-item__desc:hover ~ .menu-item__popup__window{
+.menu-item__desc:hover ~ .menu-item__popup-window{
     top: 0;
     transition: 0.5s;
 }
