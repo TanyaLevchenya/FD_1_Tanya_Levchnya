@@ -11,12 +11,12 @@ b = temp;
 console.log(a);
 console.log(b);
 
-let a = 20;
-let b = 15;
+let c = 20;
+let d = 15;
 
-a = a + b;
-b = a - b;
-a = a - b;
+c = c + d;
+d = c - d;
+c = c - d;
 
-console.log(a);
-console.log(b);
+console.log(c);
+console.log(d);

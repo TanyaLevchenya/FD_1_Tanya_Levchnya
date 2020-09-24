@@ -5,19 +5,19 @@ let secondOperations = prompt();
 let thirdNum = +prompt();
 
 if (secondOperations == '-'){
-        alert (firstNum - thirdNum);
+        alert(firstNum - thirdNum);
 }
 
 if (secondOperations == '+'){
-        alert (firstNum + thirdNum);
+        alert(firstNum + thirdNum);
 }
 
 if (secondOperations == '/'){
-        alert (firstNum / thirdNum);
+        alert(firstNum / thirdNum);
 }
 
 if (secondOperations == '*'){
-        alert (firstNum * thirdNum);
+        alert(firstNum * thirdNum);
 }
 
 
