@@ -1,0 +1,77 @@
+.item{
+    display: flex;
+    margin-bottom: 50px;
+}
+@keyframes load{
+    
+    from{
+        transform: translate(5px 50px);
+    }
+    50%{
+        transform: translate(0px, 10px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+.spinner, .spinner_1{
+    height: 15px;
+    width: 15px;
+    background-color: #aca3a3;
+    border-radius: 50%;
+    margin: 5px;
+    animation-name: load;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+.spinner_2{
+    animation-delay: 0.3s;
+}
+.spinner_3{
+    animation-delay: 0.6s;
+}
+.calendar{
+    position: relative;
+}
+.calendar_img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 250px;
+    animation-name: calendar;
+    animation-duration: 1s;
+}
+.calendar_img_wrap {
+    position: absolute;
+}
+.calendar_img .calendar_img_wrap{
+    animation: none;
+}
+.calendar_img::before {
+    content: "";
+     position: absolute;
+     top: -10;
+     left: 60px;
+     z-index: -1;
+}
+.calendar_img::after{
+    content: "";
+    position: absolute;
+    top: -10;
+    left: 60px;
+    z-index: -1;
+}
+@keyframes calendar{
+    from{
+    }
+    to {
+        transform: rotateX(150deg);
+        visibility: hidden;
+    }
+}
+
+
+
+    
