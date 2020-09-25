@@ -1,3 +1,4 @@
+'use strict'
 // Преобразовать строку в массив.
 let str = prompt();
 let arr = [];
