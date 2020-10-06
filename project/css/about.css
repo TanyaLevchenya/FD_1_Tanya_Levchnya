@@ -1,0 +1,71 @@
+/* section */
+.section{
+    background-image: url(../img/kapkeyki-s-oreo-3.jpg);
+    height: calc(100vh - 40px);
+    background-color:   #faf9f6bd;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+}
+.section > div:first-child{
+    color: #cea877;
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 90px;
+    padding-left: 90px;
+    padding-top: 60px;
+}
+.section > div:last-child{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    font-size: 50px;
+    padding-left: 90px;
+}
+/* main */
+.main-story-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.history{
+    padding: 20px 20px;
+}
+.confectionery{
+    padding: 0 20px 20px;
+}
+.production{
+    padding: 0 20px 20px;
+}
+.main-story{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px 20px;
+}
+img{
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.main-story > div:last-child{
+    text-align: justify;
+    
+}
+.designation-item{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+}
+@media (max-width: 550px){
+    .section > div:first-child{
+        font-size: 70px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .section > div:last-child{
+        font-size: 40px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .designation-item{
+        font-size: 25px;
+    }
+}

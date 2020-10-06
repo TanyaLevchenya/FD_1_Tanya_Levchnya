@@ -1,0 +1,136 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(./font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(./font/8154.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+    
+}
+main{
+    background-color:  #faf9f6bd;
+}
+
+/* header */
+.header-logo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 1;
+    background-color: #cea877;
+}
+.basket{
+    width: 25px;
+    height: 25px;
+}
+.header-menu > a{
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.header-menu > a:hover{
+    text-decoration: none;
+    color: #333232;
+}
+/* main */
+.designation3{
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 60px;
+    color: #caa06a;
+}
+
+.heading{
+    font-size: 40px;
+}
+.heading > div:last-child{
+    font-family: SouthernAirePersonalUseOnly;
+    text-transform: uppercase;
+    color: #cea877;
+}
+/* footer */
+footer{
+    flex: 0 0 auto;
+}
+.footer{
+    background-color: #3d3a36;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.footer-item{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    padding: 0 20px 10px 70px;
+}
+.footer-item1{
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px 0 70px;
+}
+.footer-block{
+    padding-left: 50px;
+}
+.contact{
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    padding: 0 0 20px ;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+}
+.footer-icon{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.icon-botton{
+    padding-bottom: 40px;
+}
+.footer-icon > div:last-child{
+    padding: 10px;
+    text-align: center;
+}
+.footer-icon-img{
+    display: flex;
+    align-items: center;
+}
+.bottom{
+    background-color: #2c2a27;
+    border-top: 1px solid #969490;
+    color: white;
+    padding: 20px 50px;
+}
+@media (max-width: 550px){
+    .footer-item{
+        padding: 0 0 10px 50px;
+    }
+    .footer-item1{
+        padding: 0 0 10px 50px;
+    }
+}
+@media (max-width: 900px){
+    .designation1{
+        text-align: center;
+    }
+}

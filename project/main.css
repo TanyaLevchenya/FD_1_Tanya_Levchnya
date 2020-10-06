@@ -1,0 +1,204 @@
+/* section */
+.section{
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background-color:   #f8f4e6bd;
+}
+.carousel{
+    flex-grow: 3;
+    flex-basis: 0;
+}
+.d-block{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 40px);
+    padding: 30px 30px;
+}
+.d-block_1{
+    background-image: url(./img/1Olive_3Ways_IrishCoffeeCake-48251b1.jpg);
+}
+.d-block_2{
+    background-image: url(./img/1kapkeyki-s-oreo-3.jpg);
+}
+.d-block_3{
+    background-image: url(./img/smores-french-macarons-05.jpg);
+}
+.section-item{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    margin: auto;
+}
+.designation{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+}
+.designation2{
+    font-size: 30px;
+}
+.section-item > div:last-child{
+    font-size: 25px;
+}
+
+/* main */
+.main-citation, .citation{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+    font-family: PTSerif-Regular;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.main-citation1{
+    font-size: 20px;
+}
+/* container 1, 6 */
+.designation1{
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 60px;
+    color: #caa06a;
+}
+.main-story-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 40px 20px;
+}
+img{
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.main-story{
+    padding: 0px 30px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.main-story > div:last-child{
+    text-align: justify;
+    
+}
+.designation-item{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+}
+/* container 2, 4 */
+.main-img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px;
+    text-align: center;
+}
+.main-img-item{
+    background-image: url(./img/1DSC07925-2.jpg);
+}
+.main-img-name{
+    background-image: url(./img/кофе-1.jpg);
+}
+.main-img > div:first-child{
+    color: #cea877;
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 60px;
+}
+.main-img > h2{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    color: white;
+    font-size: 55px;
+}
+
+/* container 3, 5 */
+.main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.main-menu-item{
+    border-bottom: 1px solid #c4c1c1d7;
+    padding: 10px;
+    font-size: 20px;
+}
+.menu{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px 15px;
+}
+.menu-img{
+    padding: 0 30px;
+}
+.main-menu-item > a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+.main-menu-item > a:hover{
+    text-decoration: none;
+    color: #cea877;
+}
+
+/* рецептура */
+
+.menu{
+    width: 300px;
+}
+.menu-item > a{
+    text-decoration: none;
+    color: black;
+}
+.menu-item > a:hover{
+    color: #cea877;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 7px;
+    right: 7px;
+}
+@media (max-width: 900px){
+    .main-story-img{
+      justify-content: center;
+    }
+    .designation-item{
+        text-align: center;
+    }
+    .main-menu{
+        justify-content: center;
+        padding: 20px 0;
+    }
+    img {
+        padding: 20px 40px;
+    }
+    .main-img{
+        padding: 20px 0;
+    }
+    .menu{
+        text-align: center;
+    }
+    .main-menu-item{
+        border-bottom: none;
+    }
+    .button{
+        bottom: 27px;
+    }
+    .main-img-item{
+        background-image: url(./img/1DSC07925-2.jpg);
+    }
+    .main-img-name{
+        background-image: url(./img/1DSC07925-2.jpg);
+    }
+}
+
+@media (max-width: 350px){
+    .designation{
+      font-size: 40px;
+    }
+    .designation3{
+        font-size: 50px;
+    }
+}
