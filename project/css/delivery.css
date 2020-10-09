@@ -1,5 +1,5 @@
 .section{
-    background-image: url(../img/delivery_pic.jpg);
+    background-image: url(../img/1d89ce_45b7b739c77b44bdbe77caa71bdc3fd3_mv2.jpg);
     height: calc(100vh - 40px);
     background-color:   #faf9f6bd;
     width: 100%;
@@ -8,18 +8,17 @@
     background-attachment: fixed;
     margin-top: 40px;
 }
-.section > div:first-child{
-    color: #cea877;
-    font-family: SouthernAirePersonalUseOnly;
-    font-size: 90px;
-    padding-left: 70px;
-    padding-top: 110px;
-}
 .section > div:last-child{
     text-transform: uppercase;
     font-family: PTSerif-Regular;
-    font-size: 50px;
-    padding-left: 70px;
+    font-size: 70px;
+    padding-left: 90px;
+}
+.symbol{
+    color: #cea877;
+    font-family:  SouthernAirePersonalUseOnly;
+    font-size: 120px;
+    padding: 20px 0 0 90px;
 }
 main{
     padding: 30px 60px ;
@@ -39,15 +38,23 @@ main{
     color: #b69468;
 }
 @media (max-width: 800px){
-    .section{
-        background-image: url(../img/depositphotos_6803660-stock-photo-car-delivery.jpg);
-        width: 100%;
-    }
     .section > div:first-child{
-        padding-top: 10px;
-        padding-left: 20px;
+        text-align: center;
+        padding: 20px 0 0 0px;
     }
     .section > div:last-child{
-        padding-left: 20px;
+       text-align: center;
+       padding: 20px 0 0 0px;
+    }
+}
+@media (max-width: 400px){
+    .section > div:last-child{
+        font-size: 60px;
+        padding-left: 0px;
+    }
+    .symbol{
+        
+        font-size: 100px;
+        padding: 20px 0 0 0px;
     }
 }

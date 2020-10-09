@@ -9,20 +9,22 @@
     margin-top: 40px;
     text-align: center;
 }
-.section > div:first-child{
+.symbol{
     color: #cea877;
-    font-family: SouthernAirePersonalUseOnly;
-    font-size: 90px;
-    padding-top: 18px;
+    font-family:  SouthernAirePersonalUseOnly;
+    font-size: 120px;
+    padding-top: 20px;
 }
 .section > div:last-child{
     text-transform: uppercase;
     font-family: PTSerif-Regular;
-    font-size: 50px;
+    font-size: 60px;
 }
 .main{
+    display: flex;
+    flex-wrap: wrap;
     text-transform: uppercase;
-    text-align: center;
+    justify-content: center;
     font-size: 30px;
     padding: 15px 0;
     font-family: PTSerif-Regular;
@@ -30,7 +32,7 @@
 .main-item{
     text-align: center;
     padding: 0 0 20px;
-    font-family: PTSerif-Regular;
+    font-family: Roboto;
     font-size: 20px;
 }
 .contact{
@@ -43,10 +45,20 @@
     font-size: 50px;
     font-family: SouthernAirePersonalUseOnly;
 }
+.icon-img1{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
 .contact-item{
     display: flex;
     flex-wrap: wrap;
+    margin: 30px;
 }
+.contact-item1{
+    padding: 20px;
+}
+
 .contact-item1 > div:first-child{
     font-size: 60px;
     color: #cea877;
@@ -59,5 +71,73 @@
 }
 img{
     width: 100%;
-    padding: 0 30px 30px;
+}
+.info{
+     padding: 30px;
+}
+.information-input{
+    display: flex;
+    align-items: center;
+}
+.information-input > span:first-child{
+    width: 100px;
+}
+.name{
+    margin: 10px;
+    border: inset;
+    width: 100%;
+    vertical-align: middle;
+}
+button{
+    background-color: #cea877;
+    color: white;
+    width: 120px;
+    height: 35px;
+    font-size: 20px;
+    border: outset;
+    font-family:  StMarie;
+}
+.button{  
+    display: flex;
+    justify-content: flex-end;
+}
+button:hover{
+    background-color: #a39481;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 20px 0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.map{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: SouthernAirePersonalUseOnly;
+    text-align: center;
+    color: #cea877;
+}
+.map-location{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    text-align: center;
+}
+@media (max-width: 750px){
+    .main{
+        text-align: center;
+        font-size: 25px;
+        padding: 15px 20px;
+    }
+    .main-item{
+        text-align: center;
+    }
 }

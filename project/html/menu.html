@@ -13,18 +13,54 @@
     <div class="header-logo">cafehouse</div>
         <div class="header-menu">
             <a href="../main_page.html">Home</a>
-            <a href="../html/menu.html" >Menu</a>
-            <a href="../html/delivery.html">Delivery</a>
-            <a href="../html/about.html">About</a>
-            <a href="../html/contacts.html">Contact</a>
-            <img class="basket" src="../img/unnamed (1).png" alt="">
-        </div>    
+            <a href="./menu.html" >Menu</a>
+            <a href="./delivery.html">Delivery</a>
+            <a href="./about.html">About</a>
+            <a href="./contacts.html">Contact</a>
+            <a class="basket-img" href="">
+                <img class="basket" src="../img/unnamed (1).png" alt="">
+            </a>
+        </div>
+        
+        <div class="mobile-menu">
+            <div class="mobile-menu-item">
+              <a class="basket-img" href="">
+                   <img class="basket" src="../img/unnamed (1).png" alt="">
+             </a>
+             <a href="#mobile-menu">
+               <span class="jump">&#8801;</span>
+             </a>
+            </div>
+       
+             <div id="mobile-menu">
+               <div class="menu_box" >
+                 <div>
+                   <a class="close" href="#">X</a>
+                 </div>
+                 <div>
+                   <a class="menu_box-item" href="../main_page.html">Home</a>
+                 </div>
+                 <div>
+                   <a class="menu_box-item" href="./menu.html">Menu</a>
+                 </div>
+                 <div>
+                   <a class="menu_box-item" href="./delivery.html">Delivery</a>
+                 </div>
+                 <div>
+                   <a class="menu_box-item" href="./about.html">About</a>
+                 </div>
+                 <div>
+                   <a class="menu_box-item" href="./contacts.html">Contact</a>
+                 </div>
+               </div>
+             </div>
+        </div> 
 </header>
 <!-- section -->
 <section>
     <div>
         <div class="section"> 
-            <div>Menu</div>
+            <div class="symbol">Menu</div>
             <div class="section-item">our</div>
             <div class="section-item">product</div>
         </div>
@@ -34,11 +70,11 @@
 <main>
     <div class="menu">
         <div>
-            <div>
+            <div >
                 <a href="../html/cakes.html" class="menu-name">Cakes</a>
             </div>
-            <div>
-                <img src="../img/17-7-700x502.jpg" alt="">
+            <div class="menu-item">
+                <img class="img" src="../img/17-7-700x502.jpg" alt="">
             </div>
         </div>
 
@@ -46,8 +82,8 @@
             <div>
                 <a href="../html/cupcakes.html" class="menu-name">Cupcakes</a>
             </div>
-            <div>
-                <img src="../img/18690_АэлитаАрт.jpg" alt="">
+            <div class="menu-item">
+                <img class="img" src="../img/18690_АэлитаАрт.jpg" alt="">
             </div>
         </div>
 
@@ -55,8 +91,8 @@
             <div>
                 <a href="../html/pastries.html" class="menu-name">Pastries</a>
             </div>
-            <div> 
-                <img src="../img/c38bd5ef844fe486c6832a049122126a.jpg" alt="">
+            <div class="menu-item"> 
+                <img class="img" src="../img/c38bd5ef844fe486c6832a049122126a.jpg" alt="">
             </div>
         </div>
     </div>
@@ -66,8 +102,8 @@
             <div>
                 <a href="../html/cheesecakes.html" class="menu-name">Cheesecakes</a>
             </div>
-            <div>
-                <img src="../img/chizkeik-new-york-770x513.jpg" alt="">
+            <div class="menu-item">
+                <img class="img" src="../img/chizkeik-new-york-770x513.jpg" alt="">
             </div>
         </div>
         
@@ -75,8 +111,8 @@
             <div>
                 <a href="../html/pies.html" class="menu-name">Pies</a>
             </div>
-            <div>
-                <img src="../img/1585155893_otkrytyj-fruktovyj-pirog.jpg" alt="">
+            <div class="menu-item">
+                <img class="img" src="../img/1585155893_otkrytyj-fruktovyj-pirog.jpg" alt="">
             </div>
         </div>
 
@@ -84,8 +120,8 @@
             <div>
                 <a href="../html/other.html" class="menu-name">Other</a>
             </div>
-            <div>
-                <img src="../img/345x345_Unicorn-Macarons-.jpg" alt="">
+            <div class="menu-item">
+                <img class="img" src="../img/345x345_Unicorn-Macarons-.jpg" alt="">
             </div>
         </div>
     </div>
@@ -113,7 +149,7 @@
             </div>
             <div class="footer-icon">
               <div class="footer-icon-img">
-                  <img class="icon" src="../img/png-transparent-call-application-icon-whatsapp-computer-icons-whatsapp-logo-black-and-white-brand-thumbnail.png" alt="">
+                  <img class="icon" src="../img/social-media-icon-social-network-font-awesome-telephone-viber-logo-png.jpg" alt="">
               </div>
               <div>+375 (29) 1 555 555</div>
             </div>
@@ -149,5 +185,7 @@
     </div>  
     <div class="bottom">&#169; Cafehouse 2017</div>
   </footer>
+  <script src="../main.js"></script>
+  <div id="scrollTop" onclick="goUp()"></div>
 </body>
 </html>

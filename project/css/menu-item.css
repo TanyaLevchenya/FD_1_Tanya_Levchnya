@@ -6,26 +6,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 40px;
-    padding-left: 80px;
-}
-.section > div:first-child{
-    color: #cea877;
-    font-family: SouthernAirePersonalUseOnly;
-    font-size: 90px;
-    padding-top: 30px;
+    padding-left: 50px;
 }
 .section > div:last-child{
     text-transform: uppercase;
     font-family: PTSerif-Regular;
-    font-size: 50px;
+    font-size: 70px;
+}
+.symbol{
+    color: #cea877;
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 90px;
+    padding-top: 70px;
 }
 /* рецептура */
+
 .recipe{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px;
+    background-color: rgb(241, 243, 245);
+    border-bottom: 1px solid #c4c1beb9;
+    
 }
 .recipe-product{
     width: 300px;
@@ -48,21 +51,6 @@
 .img{
     width: 100%
 }
-/* выезжающее меню */
-/* .recipe-item__popup__window{
-    left: 0px;
-    position: absolute;
-    background-color: #cea877;
-    color: white;
-    padding: 10px;
-    text-align: justify;
-    width: 400px;
-}
-.recipe:hover ~ .recipe-item__popup__window{
-    right: 0;
-    transition: 0.5s;
-} */
-
 .name{
     font-size: 30px;
     padding: 10px 0 0; 
@@ -79,26 +67,34 @@
     text-align: center;
     cursor: pointer;
 }
+.menu-item__button:hover{
+    background-color: #817564;
+}
 .basket{
     text-decoration: none;
     color: white;
 }
-@media (max-width: 450px){
+.basket:hover{
+    color: #cea877;
+}
+@media (max-width: 550px){
     .section > div:first-child{
-        font-size: 60px;
+        font-size: 80px;
+    }
+    .section{
+        padding-left: 0;
+        text-align: center;
+    }
+    .symbol{
+        padding-top: 40px;
     }
     .section > div:last-child{
-        font-size: 30px;
+        font-size: 50px;
     }
     .recipe-product{
         padding-left: 0;
     }
 }
-@media (max-width: 800px){
-    .recipe-product{
-    
-    }
     .img{
         align-items: center;
-    }
     }

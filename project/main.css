@@ -1,11 +1,5 @@
-/* section */
-.section{
-    height: calc(100vh - 40px);
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    background-color:   #f8f4e6bd;
-}
+
+/* carusel */
 .carousel{
     flex-grow: 3;
     flex-basis: 0;
@@ -15,16 +9,25 @@
     background-repeat: no-repeat;
     width: 100%;
     height: calc(100vh - 40px);
-    padding: 30px 30px;
+    padding: 20px 0 0 50px;
 }
 .d-block_1{
-    background-image: url(./img/1Olive_3Ways_IrishCoffeeCake-48251b1.jpg);
+    background-image: url(./img/1d89ce_45b7b739c77b44bdbe77caa71bdc3fd3_mv2.jpg);
 }
 .d-block_2{
     background-image: url(./img/1kapkeyki-s-oreo-3.jpg);
 }
 .d-block_3{
-    background-image: url(./img/smores-french-macarons-05.jpg);
+    background-image: url(./img/129806-desert-ingredient-pishha-konditerskie_izdeliya-krem-3840x2160.jpg);
+}
+
+/* section */
+.section{
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background-color:   #f8f4e6bd;
 }
 .section-item{
     flex-grow: 1;
@@ -32,40 +35,55 @@
     text-align: center;
     margin: auto;
 }
-.designation{
-    font-size: 50px;
+.section-item > div:last-child{
+    font-size: 25px;
+}
+.symbol{
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 120px;
+    color: #caa06a;
+}
+.symbol1{
+    font-size: 60px;
     text-transform: uppercase;
     font-family: PTSerif-Regular;
 }
-.designation2{
-    font-size: 30px;
+.symbol2{
+    font-size: 40px;
 }
-.section-item > div:last-child{
-    font-size: 25px;
+.symbol3{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    font-size: 60px;
+    color: white;
 }
 
 /* main */
 .main-citation, .citation{
     text-transform: uppercase;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 25px;
     font-family: PTSerif-Regular;
     font-size: 28px;
-    padding-bottom: 20px;
 }
 .main-citation1{
     font-size: 20px;
+    padding-bottom: 25px;
 }
 /* container 1, 6 */
-.designation1{
+.designation{
     font-family: SouthernAirePersonalUseOnly;
     font-size: 60px;
     color: #caa06a;
 }
+.img{
+    padding-top: 25px;
+}
+/* container 1 */
 .main-story-img{
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 30px 40px 20px;
+    padding: 0px 30px 25px 30px;
 }
 img{
     width: 100%;
@@ -79,11 +97,18 @@ img{
 }
 .main-story > div:last-child{
     text-align: justify;
+    font-family: Roboto;
     
 }
 .designation-item{
     text-transform: uppercase;
     font-family: PTSerif-Regular;
+}
+/* container 6 */
+.main-story-img1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 25px 30px;
 }
 /* container 2, 4 */
 .main-img{
@@ -103,20 +128,20 @@ img{
 .main-img > div:first-child{
     color: #cea877;
     font-family: SouthernAirePersonalUseOnly;
-    font-size: 60px;
+    font-size: 100px;
 }
 .main-img > h2{
     text-transform: uppercase;
     font-family: PTSerif-Regular;
     color: white;
-    font-size: 55px;
+    font-size: 60px;
 }
 
 /* container 3, 5 */
 .main-menu{
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 25px 30px;
 }
 .main-menu-item{
     border-bottom: 1px solid #c4c1c1d7;
@@ -127,9 +152,6 @@ img{
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px 15px;
-}
-.menu-img{
-    padding: 0 30px;
 }
 .main-menu-item > a{
     color: black;
@@ -153,26 +175,19 @@ img{
 .menu-item > a:hover{
     color: #cea877;
 }
-.button{
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 7px;
-    right: 7px;
-}
-@media (max-width: 900px){
+
+@media (max-width: 950px){
     .main-story-img{
       justify-content: center;
+    }
+    .designation{
+        text-align: center;
     }
     .designation-item{
         text-align: center;
     }
     .main-menu{
         justify-content: center;
-        padding: 20px 0;
-    }
-    img {
-        padding: 20px 40px;
     }
     .main-img{
         padding: 20px 0;
@@ -184,7 +199,7 @@ img{
         border-bottom: none;
     }
     .button{
-        bottom: 27px;
+        bottom: 10px;
     }
     .main-img-item{
         background-image: url(./img/1DSC07925-2.jpg);
@@ -193,12 +208,50 @@ img{
         background-image: url(./img/1DSC07925-2.jpg);
     }
 }
-
-@media (max-width: 350px){
+@media (max-width: 860px){
     .designation{
-      font-size: 40px;
+        text-align: center;
     }
-    .designation3{
+}
+@media (max-width: 620px){
+      .main-citation{
+          padding: 25px 15px 0;
+      }
+}
+@media (max-width: 550px){
+    .symbol{
+        font-size: 80px;
+        text-align: center;
+        padding-top: 20px;
+        padding: 0 10px;
+    }
+    .symbol1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .symbol2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .symbol3{
+        font-size: 40px;
+        text-align: center;
+    }
+    .d-block{
+        padding: 0px 0 0 0px;
+    }
+    .main-img > div:first-child{
+        font-size: 80px;
+    }
+    .main-img > h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 550px){
+    .main-img > div:first-child{
         font-size: 50px;
+    }
+    .main-img > h2{
+        font-size: 30px;
     }
 }

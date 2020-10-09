@@ -13,20 +13,56 @@
   <header class="header">
     <div class="header-logo">cafehouse</div>
       <div class="header-menu">
-        <a href="./main_page.html">Home</a>
-        <a href="./html/menu.html">Menu</a>
-        <a href="./html/delivery.html">Delivery</a>
-        <a href="./html/about.html">About</a>
-        <a href="./html/contacts.html">Contact</a>
-        <img class="basket" src="../img/unnamed (1).png" alt="">
-      </div>  
+        <a href="../main_page.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./delivery.html">Delivery</a>
+        <a href="./about.html">About</a>
+        <a href="./contacts.html">Contact</a>
+        <a class="basket-img" href="">
+          <img class="basket" src="../img/unnamed (1).png" alt="">
+        </a>
+      </div>
+      
+      <div class="mobile-menu">
+        <div class="mobile-menu-item">
+          <a class="basket-img" href="">
+               <img class="basket" src="../img/unnamed (1).png" alt="">
+         </a>
+         <a href="#mobile-menu">
+           <span class="jump">&#8801;</span>
+         </a>
+        </div>
+   
+         <div id="mobile-menu">
+           <div class="menu_box" >
+             <div>
+               <a class="close" href="#">X</a>
+             </div>
+             <div>
+               <a class="menu_box-item" href="../main_page.html">Home</a>
+             </div>
+             <div>
+               <a class="menu_box-item" href="./menu.html">Menu</a>
+             </div>
+             <div>
+               <a class="menu_box-item" href="./delivery.html">Delivery</a>
+             </div>
+             <div>
+               <a class="menu_box-item" href="./about.html">About</a>
+             </div>
+             <div>
+               <a class="menu_box-item" href="./contacts.html">Contact</a>
+             </div>
+           </div>
+         </div>
+      </div> 
   </header>
 
 <!-- section -->
   <section>
     <div>
         <div class="section"> 
-            <div>Our</div>
+            <div class="symbol">Our</div>
             <div>Delivery</div>
         </div>
     </div>
@@ -34,6 +70,7 @@
 
 <!-- main -->
   <main>
+
     <h2 class="main">Delivery service Cafehouse works from 12:00 to 17:00</h2>
     <div class="main-item">You can leave your order through the website and by phone from 10:00 to 22:00</div>
     <div class="main-item">The minimum order amount is 15 rubles</div>
@@ -76,7 +113,7 @@
             </div>
             <div class="footer-icon">
               <div class="footer-icon-img">
-                  <img class="icon" src="../img/png-transparent-call-application-icon-whatsapp-computer-icons-whatsapp-logo-black-and-white-brand-thumbnail.png" alt="">
+                  <img class="icon" src="../img/social-media-icon-social-network-font-awesome-telephone-viber-logo-png.jpg" alt="">
               </div>
               <div>+375 (29) 1 555 555</div>
             </div>
@@ -112,5 +149,12 @@
     </div>  
     <div class="bottom">&#169; Cafehouse 2017</div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
+  <div id="scrollTop" onclick="goUp()"></div>
+  
 </body>
 </html>

@@ -10,31 +10,54 @@
 </head>
 <body>
 
-<div class="mobile-menu">
-    <a href="#mobile" class="header-menu">
-      <span class="jump">&#8801;</span>
-    </a>
-    <div class="menu_box" id="mobile">
-      <a class="close" href="#">&#8629;</a>
+<!-- header -->
+  <header class="header">
+    <div class="header-logo">cafehouse</div>
+    <div class="header-menu">
       <a href="./main_page.html">Home</a>
       <a href="./html/menu.html">Menu</a>
       <a href="./html/delivery.html">Delivery</a>
       <a href="./html/about.html">About</a>
       <a href="./html/contacts.html">Contact</a>
-  </div>
-</div>
+      <a class="basket-img" href="">
+          <img class="basket" src="./img/unnamed (1).png" alt="">
+      </a>
+    </div>
 
-<!-- header -->
-  <header class="header">
-    <div class="header-logo">cafehouse</div>
-      <div class="header-menu">
-        <a href="./main_page.html">Home</a>
-        <a href="./html/menu.html">Menu</a>
-        <a href="./html/delivery.html">Delivery</a>
-        <a href="./html/about.html">About</a>
-        <a href="./html/contacts.html">Contact</a>
-        <img class="basket" src="./img/unnamed (1).png" alt="">
-      </div>  
+    <div class="mobile-menu">
+     <div class="mobile-menu-item">
+       <a class="basket-img" href="">
+            <img class="basket" src="./img/unnamed (1).png" alt="">
+      </a>
+      <a href="#mobile-menu">
+        <span class="jump">&#8801;</span>
+      </a>
+     </div>
+
+      <div id="mobile-menu">
+        <div class="menu_box" >
+          <div>
+            <a class="close" href="#">X</a>
+          </div>
+          <div>
+            <a class="menu_box-item" href="./main_page.html">Home</a>
+          </div>
+          <div>
+            <a class="menu_box-item" href="./html/menu.html">Menu</a>
+          </div>
+          <div>
+            <a class="menu_box-item" href="./html/delivery.html">Delivery</a>
+          </div>
+          <div>
+            <a class="menu_box-item" href="./html/about.html">About</a>
+          </div>
+          <div>
+            <a class="menu_box-item" href="./html/contacts.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      
+    </div> 
   </header>
 
 <!-- section -->
@@ -43,21 +66,21 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="d-block_1 d-block">
-              <div class="designation3">Welcome to</div>
-              <h2 class="designation">cafehouse</h2>
-              <div class="designation2">Cozy cafe - pastry shop</div> 
+              <div class="symbol">Welcome to</div>
+              <h2 class="symbol1">cafehouse</h2>
+              <div class="symbol2">Cozy cafe - pastry shop</div> 
             </div>
         </div>
         <div class="carousel-item">
             <div class="d-block_2 d-block">
-              <div class="designation3">Your</div>
-              <h2 class="designation">Birthday<br>with <br> Cafehous</h2>
+              <div class="symbol">Your</div>
+              <h2 class="symbol1">Birthday<br>with <br> Cafehous</h2>
             </div>
         </div>
         <div class="carousel-item">
           <div class="d-block_3 d-block">
-              <div class="designation3">We</div>
-              <h2 class="designation">Always glad<br>to  see Jou</h2>
+              <div class="symbol">We</div>
+              <h2 class="symbol3">Always glad<br>to  see Jou</h2>
           </div>
         </div>
       </div>
@@ -84,13 +107,13 @@
     </div>
 
 <!-- container 1, 6 -->
-    <div class="main-story-img">
+    <div class="main-story-img main-story-img1 ">
         <div>
           <img src="./img/krem_iz_tvorojnogo_sira-279230.jpg">
         </div>
 
         <div class="main-story">
-          <div class="designation1">
+          <div class="designation">
               Story
           </div> 
           <h2 class="designation-item">our</h2>
@@ -111,9 +134,9 @@
     </div>  
 
 <!-- container 3, 5 -->
-    <div class="main-menu">
+    <div class="main-menu main-menu1">
         <div class="menu">
-          <div class="designation1">Cafehous</div> 
+          <div class="designation">Cafehous</div> 
           <h2 class="designation-item">new cakes</h2> 
               
           <div class="main-menu-item">
@@ -142,13 +165,13 @@
     </div>
     
 <!-- container 5, 3 -->
-    <div class="main-menu">
+    <div class="main-menu main-menu1">
         <div>
             <img class="menu-img" src="./img/depositphotos_61043143-stock-photo-french-macaroons-dessert.jpg">
         </div> 
 
         <div class="menu">
-          <div class="designation1">Cafehouse</div> 
+          <div class="designation">Cafehouse</div> 
           <h2 class="designation-item">Recommended</h2> 
           <div class="main-menu-item">
               <a href="./html/menu-item.html#Cafehouse">Cafehouse</a>  
@@ -165,9 +188,9 @@
         </div>
     </div>
 <!-- container 6, 1 -->
-    <div class="main-story-img">
+    <div class="main-story-img main-story-img1">
       <div class="main-story">
-        <div class="designation1">Our</div> 
+        <div class="designation">Our</div> 
         <h2 class="designation-item">Confectionery</h2> 
         <div> 
             We have been open for you since 2017.  Fresh pastries, delicious cakes, pies, pastries and muffins, 
@@ -179,7 +202,7 @@
       </div>
       
       <div>
-        <img src="./img/caption.jpg">
+        <img class="img" src="./img/caption.jpg">
       </div>
     </div>
   </main>
@@ -207,7 +230,7 @@
             </div>
             <div class="footer-icon">
               <div class="footer-icon-img">
-                  <img class="icon" src="./img/png-transparent-call-application-icon-whatsapp-computer-icons-whatsapp-logo-black-and-white-brand-thumbnail.png" alt="">
+                  <img class="icon" src="./img/social-media-icon-social-network-font-awesome-telephone-viber-logo-png.jpg" alt="">
               </div>
               <div>+375 (29) 1 555 555</div>
             </div>
@@ -248,8 +271,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
-    <a href="#" class="button">
-      <img src="./img/back-to-top-icon-png-7.jpg">
-    </a>
+    <div id="scrollTop" onclick="goUp()"></div>
 </body>
 </html>

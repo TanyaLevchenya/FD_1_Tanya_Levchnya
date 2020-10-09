@@ -6,10 +6,13 @@
     font-family: PTSerif-Regular;
     src: url(./font/8154.ttf);
 }
+@font-face{
+    font-family: Roboto;
+    src: url(./font/Roboto-Regular.ttf);
+}
 body{
     margin: 0;
     background-color:  #faf9f6bd;
-    
 }
 main{
     background-color:  #faf9f6bd;
@@ -23,22 +26,17 @@ main{
 }
 .header{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 25px;
     top: 0;
     left: 0;
     right: 0;
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     font-size: 20px;
     position: fixed;
     z-index: 1;
     background-color: #cea877;
-}
-.basket{
-    width: 25px;
-    height: 25px;
 }
 .header-menu > a{
     padding: 10px 20px;
@@ -50,13 +48,68 @@ main{
     text-decoration: none;
     color: #333232;
 }
-/* main */
-.designation3{
-    font-family: SouthernAirePersonalUseOnly;
+
+/* mobile menu */
+.mobile-menu {
+    display: none;
+}
+.menu_box {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -50vw;
+    top: 0;
+    background-color: #b99c71e8;
+    transition: 1s;
+    padding-top: 0px;
+    padding-left: 50px;
+    z-index: 2;
+}
+#mobile-menu {
+    background-color: rgba(128, 128, 128, 0);
+    transition: 1s;
+}
+#mobile-menu:target {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.507);
+}
+#mobile-menu:target > .menu_box {
+    right: 0;   
+}
+.menu_box-item{
+    color: white;
+    font-size: 25px;
+}
+.menu_box-item:hover{
+    text-decoration: none;
+    color: #3d3a36;
+}
+.basket{
+    width: 25px;
+    height: 25px;
+}
+.close{
     font-size: 60px;
-    color: #caa06a;
+    padding: 10px 20px;
+}
+.jump{
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.jump:hover{
+    text-decoration: none;
+    color: #3d3a36;
+}
+.mobile-menu-item{
+    display: flex;
 }
 
+/* main */
 .heading{
     font-size: 40px;
 }
@@ -65,6 +118,7 @@ main{
     text-transform: uppercase;
     color: #cea877;
 }
+
 /* footer */
 footer{
     flex: 0 0 auto;
@@ -121,16 +175,36 @@ footer{
     color: white;
     padding: 20px 50px;
 }
+/* стрелка */
+#scrollTop{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 7px;
+    right: 7px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    background-image: url(./img/back-to-top-icon-png-7.jpg);
+}
+
+@media (max-width: 900px){
+    .header-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .designation1{
+        text-align: center;
+    }
+
+}
 @media (max-width: 550px){
     .footer-item{
         padding: 0 0 10px 50px;
     }
     .footer-item1{
         padding: 0 0 10px 50px;
-    }
-}
-@media (max-width: 900px){
-    .designation1{
-        text-align: center;
     }
 }
