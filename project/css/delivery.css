@@ -1,3 +1,22 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
 .section{
     background-image: url(../img/1d89ce_45b7b739c77b44bdbe77caa71bdc3fd3_mv2.jpg);
     height: calc(100vh - 40px);

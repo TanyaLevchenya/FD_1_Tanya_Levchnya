@@ -1,4 +1,23 @@
 
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(./font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(./font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(./font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
 /* carusel */
 .carousel{
     flex-grow: 3;
@@ -98,7 +117,7 @@ figure{
     display: inline-flex;
     width: 600px;
     height: 400px;
-    color: #caa06a;
+    color: #fff;
     justify-content: center;
     align-items: center;
     text-align: center;

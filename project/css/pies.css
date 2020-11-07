@@ -1,3 +1,11 @@
+
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
 .menu_box-item{
     text-decoration: none;
 }
@@ -16,6 +24,16 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+}
+.menu-item .menu-item__img{
+    position: relative;
+    overflow: hidden;
+}
+.menu-item .menu-item__img img{
+    transition: transform 2s;
+}
+.menu-item:hover .menu-item__img img{
+    transform: scale(1.2);
 }
 .menu-item__img{
     display: flex;
@@ -48,6 +66,7 @@
 }
 .menu-item__button:hover{
     background-color: #7e6d59;
+    border: solid #7e6d59;
 }
 .indents{
     margin: 10px;

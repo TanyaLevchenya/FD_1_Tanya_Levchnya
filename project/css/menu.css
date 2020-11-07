@@ -1,3 +1,22 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
 /* Меню */
 
 .menu_box-item{
@@ -63,10 +82,21 @@
 .menu-item{
     padding: 15px;
 }
-.img:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+
+.menu-item{
+    position: relative;
+    overflow: hidden;
 }
+.menu-item .img{
+    transition: transform 2s;
+}
+.menu-item:hover .img{
+    transform: scale(1.1);
+}
+footer{
+    padding-top: 20px;
+}
+
 
 @media (max-width: 550px){
     .section-item{

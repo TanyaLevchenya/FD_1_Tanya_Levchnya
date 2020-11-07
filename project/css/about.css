@@ -1,3 +1,22 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
 /* section */
 .section{
     background-image: url(../img/kapkeyki-s-oreo-3.jpg);
@@ -61,6 +80,7 @@ img{
 .font{
     font-family: Roboto; 
 }
+
 @media (max-width: 550px){
     .section > div:first-child{
         font-size: 100px;
@@ -75,7 +95,6 @@ img{
     .designation-item{
         font-size: 25px;
     }
-
 }
 @media (max-width: 840px){
     .designation{

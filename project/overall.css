@@ -1,22 +1,4 @@
-@font-face{
-    font-family: SouthernAirePersonalUseOnly;
-    src: url(./font/19484.otf);
-}
-@font-face{
-    font-family: PTSerif-Regular;
-    src: url(./font/8154.ttf);
-}
-@font-face{
-    font-family: Roboto;
-    src: url(./font/Roboto-Regular.ttf);
-}
-body{
-    margin: 0;
-    background-color:  #faf9f6bd;
-}
-main{
-    background-color:  #faf9f6bd;
-}
+
 
 /* header */
 .header-logo{
@@ -25,18 +7,8 @@ main{
     font-size: 25px;
     position: relative;
     outline: none;
-    animation: animate 5s linear infinite;
 }
-@keyframes animate{
-    0%{
-        color: #494646c9;
-        text-shadow: none;
-    }
-    100%{
-        color: #fff;
-        text-shadow: 0 0 20px #fff;
-    }
-}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -124,6 +96,12 @@ main{
     width: 25px;
     height: 25px;
 }
+.basket-img{
+    color: white;
+}
+.basket-img:hover{
+    color: #3d3a36;
+}
 .close{
     padding: 10px 20px;
 }
@@ -179,12 +157,12 @@ footer{
 .contact{
     text-transform: uppercase;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     padding: 0 0 20px ;
 }
 .footer-icon-img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 3px solid #fff;
     display: flex;

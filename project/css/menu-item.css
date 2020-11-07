@@ -1,3 +1,22 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
 .menu_box-item{
     text-decoration: none;
 }
@@ -56,8 +75,44 @@
     padding-bottom: 10px;
 }
 .img{
-    width: 100%
+    width: 400px;
+    height: 350px;
 }
+.box{
+    position: relative;
+}
+.box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #cea877ea;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.box:hover .details{
+    transform: scaleY(1);
+}
+.box .details .content{
+    position: absolute;
+    top: 50px;
+    transform: translateY(-10%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+.box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
 .name{
     font-size: 30px;
     padding: 10px 0 0; 
@@ -76,6 +131,7 @@
 }
 .menu-item__button:hover{
     background-color: #817564;
+    border: solid #817564;
 }
 .basket{
     text-decoration: none;
@@ -105,3 +161,9 @@
     .img{
         align-items: center;
     }
+    @media (max-width: 550px){
+         .img{
+            width: 300px;
+            height: 250px;
+        }
+}
