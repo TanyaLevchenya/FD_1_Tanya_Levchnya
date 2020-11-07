@@ -80,18 +80,69 @@
     padding-top: 25px;
 }
 /* container 1 */
+.img1{
+    background-image: url(./img/shokoladnye-kapkeyki.jpg);
+}
+.img2{
+    background-image: url(./img/depositphotos_61043143-stock-photo-french-macaroons-dessert.jpg);
+}
+.img3{
+    background-image: url(./img/caption.jpg);
+    margin-left: 30px;
+}
+.img{
+    background-image: url(./img/krem_iz_tvorojnogo_sira-279230.jpg);
+    margin-right: 30px;
+}
+figure{
+    display: inline-flex;
+    width: 600px;
+    height: 400px;
+    color: #caa06a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+figure:before{
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+figure:hover:before{
+    transform: scale(1);
+}
+figure:after{
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transition: 0.2s;
+    transform: scaleY(0);
+}
+figure:hover:after{
+    transform: scale(1);
+}
+
+
 .main-story-img{
     display: flex;
     flex-wrap: wrap;
     padding: 0px 30px 25px 30px;
 }
-img{
-    width: 100%;
-    flex-grow: 1;
-    flex-basis: 0;
-}
+
 .main-story{
-    padding: 0px 30px;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -104,6 +155,7 @@ img{
     text-transform: uppercase;
     font-family: PTSerif-Regular;
 }
+
 /* container 6 */
 .main-story-img1{
     display: flex;
@@ -201,6 +253,9 @@ img{
     .button{
         bottom: 10px;
     }
+    .img3{
+        margin-top: 20px;
+    }
     .main-img-item{
         background-image: url(./img/1DSC07925-2.jpg);
     }
@@ -211,6 +266,14 @@ img{
 @media (max-width: 860px){
     .designation{
         text-align: center;
+        
+    }
+    .img3{
+        margin-left: 0;
+       
+    }
+    .img{
+        margin-right: 0;
     }
 }
 @media (max-width: 620px){

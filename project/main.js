@@ -1,6 +1,6 @@
 'use strict'
 
-window.onscroll=function(){
+window.onscrollBy=function(){
     var scrollElem = document.getElementById(scrollTop);
     if(document.body.scrollTop > documentElement.clientHeight){
         scrollElem.arrow.opacity = '1';
@@ -18,3 +18,5 @@ function goUp(){
     }
     else clearTimeout(timeOut);
 }
+
+const buttonOut = document.querySelector('.button-out');

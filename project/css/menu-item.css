@@ -1,3 +1,10 @@
+.menu_box-item{
+    text-decoration: none;
+}
+.close{
+    text-decoration: none;
+    color: black;
+}
 /* section */
 .section{
     background-image: url(../img/1Olive_3Ways_IrishCoffeeCake-48251b1.jpg);

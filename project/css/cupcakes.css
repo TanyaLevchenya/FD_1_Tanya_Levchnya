@@ -1,3 +1,10 @@
+.menu_box-item{
+    text-decoration: none;
+}
+.close{
+    text-decoration: none;
+    color: black;
+}
 .menu{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -38,6 +45,9 @@
     padding: 7px;
     text-align: center;
     cursor: pointer;
+}
+.menu-item__button:hover{
+    background-color: #7e6d59;
 }
 .indents{
     margin: 10px;
