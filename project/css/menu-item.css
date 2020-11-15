@@ -1,0 +1,171 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
+.menu_box-item{
+    text-decoration: none;
+}
+.close{
+    text-decoration: none;
+    color: black;
+}
+/* section */
+.section{
+    background-image: url(../img/1Olive_3Ways_IrishCoffeeCake-48251b1.jpg);
+    height: calc(100vh - 40px);
+    background-color:   #faf9f6bd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 50px;
+}
+.section > div:last-child{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    font-size: 70px;
+}
+.symbol{
+    color: #cea877;
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 90px;
+    padding-top: 70px;
+}
+/* рецептура */
+
+.recipe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgb(241, 243, 245);
+    border-bottom: 1px solid #c4c1beb9;
+    
+}
+.recipe-product{
+    width: 300px;
+    padding-bottom: 20px;
+}
+.recipe-product > div:nth-child(2){
+     color: #cea877;
+     padding: 10px 0;
+     text-transform: uppercase;
+     font-size: 25px;
+     text-align: center;
+}
+.recipe-product > div:nth-child(3){
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.recipe-product > div:nth-child(4){
+    padding-bottom: 10px;
+}
+.img{
+    width: 400px;
+    height: 350px;
+}
+.box{
+    position: relative;
+}
+.box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #cea877ea;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.box:hover .details{
+    transform: scaleY(1);
+}
+.box .details .content{
+    position: absolute;
+    top: 50px;
+    transform: translateY(-10%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+.box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.name{
+    font-size: 30px;
+    padding: 10px 0 0; 
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu-item__button{
+    background-color: #cea877;
+    color: white;
+    border-radius: 4px;
+    border: solid #cea877;
+    text-transform: uppercase;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-item__button:hover{
+    background-color: #817564;
+    border: solid #817564;
+}
+.basket{
+    text-decoration: none;
+    color: white;
+}
+.basket:hover{
+    color: #cea877;
+}
+@media (max-width: 550px){
+    .section > div:first-child{
+        font-size: 80px;
+    }
+    .section{
+        padding-left: 0;
+        text-align: center;
+    }
+    .symbol{
+        padding-top: 40px;
+    }
+    .section > div:last-child{
+        font-size: 50px;
+    }
+    .recipe-product{
+        padding-left: 0;
+    }
+}
+    .img{
+        align-items: center;
+    }
+    @media (max-width: 550px){
+         .img{
+            width: 300px;
+            height: 250px;
+        }
+        .box .details .content{
+           top: 10px;}
+}

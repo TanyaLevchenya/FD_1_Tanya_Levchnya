@@ -1,0 +1,128 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
+/* Меню */
+
+.menu_box-item{
+    text-decoration: none;
+    padding: 20px;
+}
+.close{
+    text-decoration: none;
+    color: black
+}
+.jump{
+    text-decoration: none;
+}
+.jump:hover{
+    text-decoration: none;
+}
+.section{
+    background-image: url(../img/__2019-06-01__172742.png);
+    height: calc(100vh - 40px);
+    background-color:   #faf9f6bd;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+}
+.section-item{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    font-size: 70px;
+    padding-left: 90px;
+}
+.symbol{
+    font-size: 120px;
+    color: #cea877;
+    font-family: SouthernAirePersonalUseOnly;
+    padding: 20px 0 0 90px;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    text-align: center;
+
+}
+.menu-name{
+    font-size: 70px;
+    padding: 30px 30px;
+    text-decoration: none;
+    color: #cea877;
+    cursor: pointer;
+    font-family:  SouthernAirePersonalUseOnly;
+}
+.menu-name:hover{
+    color: #888888;
+}
+.img{
+    width: 100%;
+    width: 350px;
+    height: 300px;
+}
+.menu-item{
+    padding: 15px;
+}
+
+.menu-item{
+    position: relative;
+    overflow: hidden;
+}
+.menu-item .img{
+    transition: transform 2s;
+}
+.menu-item:hover .img{
+    transform: scale(1.1);
+}
+footer{
+    padding-top: 20px;
+}
+
+
+@media (max-width: 550px){
+    .section-item{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .symbol{
+        padding: 20px 0 0 0px;
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    .img{
+      width: 100%;
+      width: 280px;  
+      height: 250px;
+    }
+    .section-item{
+        font-size: 50px;
+    }
+    .section > div:first-child{
+        font-size: 100px;
+        padding-top: 40px;
+    }
+    .menu-name{
+        font-size: 50px;
+}
+}
+

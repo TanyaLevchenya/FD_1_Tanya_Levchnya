@@ -1,0 +1,337 @@
+
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(./font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(./font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(./font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
+/* carusel */
+.carousel{
+    flex-grow: 3;
+    flex-basis: 0;
+}
+.d-block{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 40px);
+    padding: 20px 0 0 50px;
+}
+.d-block_1{
+    background-image: url(./img/1d89ce_45b7b739c77b44bdbe77caa71bdc3fd3_mv2.jpg);
+}
+.d-block_2{
+    background-image: url(./img/1kapkeyki-s-oreo-3.jpg);
+}
+.d-block_3{
+    background-image: url(./img/129806-desert-ingredient-pishha-konditerskie_izdeliya-krem-3840x2160.jpg);
+}
+
+/* section */
+.section{
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background-color:   #f8f4e6bd;
+}
+.section-item{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    margin: auto;
+}
+.section-item > div:last-child{
+    font-size: 25px;
+}
+.symbol{
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 120px;
+    color: #caa06a;
+}
+.symbol1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+}
+.symbol2{
+    font-size: 40px;
+}
+.symbol3{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    font-size: 60px;
+    color: white;
+}
+
+/* main */
+.main-citation, .citation{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 25px;
+    font-family: PTSerif-Regular;
+    font-size: 28px;
+}
+.main-citation1{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+/* container 1, 6 */
+.designation{
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 60px;
+    color: #caa06a;
+}
+.img{
+    padding-top: 25px;
+}
+/* container 1 */
+.img1{
+    background-image: url(./img/shokoladnye-kapkeyki.jpg);
+}
+.img2{
+    background-image: url(./img/depositphotos_61043143-stock-photo-french-macaroons-dessert.jpg);
+}
+.img3{
+    background-image: url(./img/caption.jpg);
+    margin-left: 30px;
+}
+.img{
+    background-image: url(./img/krem_iz_tvorojnogo_sira-279230.jpg);
+    margin-right: 30px;
+}
+figure{
+    display: inline-flex;
+    width: 600px;
+    height: 400px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+figure:before{
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+figure:hover:before{
+    transform: scale(1);
+}
+figure:after{
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transition: 0.2s;
+    transform: scaleY(0);
+}
+figure:hover:after{
+    transform: scale(1);
+}
+
+
+.main-story-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 25px 30px;
+}
+.main-story{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.main-story > div:last-child{
+    text-align: justify;
+    font-family: Roboto;
+    
+}
+.designation-item{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+}
+
+/* container 6 */
+.main-story-img1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px 25px 30px;
+}
+/* container 2, 4 */
+.main-img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px;
+    text-align: center;
+}
+.main-img-item{
+    background-image: url(./img/1DSC07925-2.jpg);
+}
+.main-img-name{
+    background-image: url(./img/кофе-1.jpg);
+}
+.main-img > div:first-child{
+    color: #cea877;
+    font-family: SouthernAirePersonalUseOnly;
+    font-size: 100px;
+}
+.main-img > h2{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    color: white;
+    font-size: 60px;
+}
+
+/* container 3, 5 */
+.main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 30px;
+}
+.main-menu-item{
+    border-bottom: 1px solid #c4c1c1d7;
+    padding: 10px;
+    font-size: 20px;
+}
+.menu{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px 15px;
+}
+.main-menu-item > a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+.main-menu-item > a:hover{
+    text-decoration: none;
+    color: #cea877;
+}
+
+/* рецептура */
+
+.menu{
+    width: 300px;
+}
+.menu-item > a{
+    text-decoration: none;
+    color: black;
+}
+.menu-item > a:hover{
+    color: #cea877;
+}
+@media (max-width: 950px){
+    .main-story-img{
+      justify-content: center;
+    }
+    .designation{
+        text-align: center;
+    }
+    .designation-item{
+        text-align: center;
+    }
+    .main-menu{
+        justify-content: center;
+    }
+    .main-img{
+        padding: 20px 0;
+    }
+    .menu{
+        text-align: center;
+    }
+    .main-menu-item{
+        border-bottom: none;
+    }
+    .button{
+        bottom: 10px;
+    }
+    .img3{
+        margin-top: 20px;
+    }
+    .main-img-item{
+        background-image: url(./img/1DSC07925-2.jpg);
+    }
+    .main-img-name{
+        background-image: url(./img/1DSC07925-2.jpg);
+    }
+}
+@media (max-width: 860px){
+    .designation{
+        text-align: center;
+        
+    }
+    .img3{
+        margin-left: 0;
+       
+    }
+    .img{
+        margin-right: 0;
+    }
+}
+@media (max-width: 620px){
+      .main-citation{
+          padding: 25px 15px 0;
+      }
+}
+@media (max-width: 550px){
+    .symbol{
+        font-size: 80px;
+        text-align: center;
+        padding-top: 20px;
+        padding: 0 10px;
+    }
+    .symbol1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .symbol2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .symbol3{
+        font-size: 40px;
+        text-align: center;
+    }
+    .d-block{
+        padding: 0px 0 0 0px;
+    }
+    .main-img > div:first-child{
+        font-size: 80px;
+    }
+    .main-img > h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 550px){
+    .main-img > div:first-child{
+        font-size: 50px;
+    }
+    .main-img > h2{
+        font-size: 30px;
+    }
+}

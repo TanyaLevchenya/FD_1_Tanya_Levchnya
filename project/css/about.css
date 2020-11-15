@@ -1,0 +1,106 @@
+@font-face{
+    font-family: SouthernAirePersonalUseOnly;
+    src: url(../font/19484.otf);
+}
+@font-face{
+    font-family: PTSerif-Regular;
+    src: url(../font/8154.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-color:  #faf9f6bd;
+}
+main{
+    background-color:  #faf9f6bd;
+}
+/* section */
+.section{
+    background-image: url(../img/kapkeyki-s-oreo-3.jpg);
+    height: calc(100vh - 40px);
+    background-color:   #faf9f6bd;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+}
+.section > div:last-child{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+    font-size: 70px;
+    padding: 20px 0 0 90px;
+}
+.symbol{
+    color: #cea877;
+    font-family:  SouthernAirePersonalUseOnly;
+    font-size: 120px;
+    padding: 20px 0 0 90px;
+}
+/* main */
+.main-story-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.history{
+    padding: 20px 20px;
+}
+.confectionery{
+    padding: 0 20px 20px;
+}
+.production{
+    padding: 0 20px 20px;
+}
+.main-story{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px 20px;
+}
+img{
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.main-story > div:last-child{
+    text-align: justify;
+    
+}
+.designation-item{
+    text-transform: uppercase;
+    font-family: PTSerif-Regular;
+}
+.designation{
+    color: #cea877;
+    font-family:  SouthernAirePersonalUseOnly;
+    font-size: 70px;
+}
+.font{
+    font-family: Roboto; 
+}
+
+@media (max-width: 550px){
+    .section > div:first-child{
+        font-size: 100px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .section > div:last-child{
+        font-size: 50px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .designation-item{
+        font-size: 25px;
+    }
+}
+@media (max-width: 840px){
+    .designation{
+        text-align: center;
+    }
+    .designation-item{
+        text-align: center;
+    }
+}
